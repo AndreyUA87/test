@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПРАТ “Днепропетровск-Авто”</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mercedes-Benz</h1>
+        <div>
+            <img src="../../assets/img/23_main.jpg" alt="car">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Главная</a></li>
+                <li><a href="../registration/index.html">Регистрация</a></li>
+                <li><a href="../user_name/index.html">Войти</a></li>
+                <li><a href="../search/index.html">Поиск</a></li>
+            </ul>
+        </nav>
+        <div>
+            <hr>
+            <h2>Поиск авто</h2>
+            <b>Тип кузова:</b>
+            <form id="car" action="https://fom.in.ua/echo" method="post">
+                <div>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Универсал">
+                    <label for="vehicle1">Универсал</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Внедорожник">
+                    <label for="vehicle2">Внедорожник</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Седан">
+                    <label for="vehicle3">Седан</label><br>
+                    <input type="checkbox" id="vehicle4" name="vehicle4" value="Купе">
+                    <label for="vehicle4">Купе</label><br>
+                    <input type="checkbox" id="vehicle5" name="vehicle5" value="Хэтчбэк">
+                    <label for="vehicle5">Хэтчбэк</label><br>
+                    <input type="checkbox" id="vehicle6" name="vehicle6" value="Кабриолет">
+                    <label for="vehicle6">Кабриолет</label><br>
+                </div>
+                <hr>
+                <label for="car_model"><b>Модель авто:</b></label>
+                <br>
+                <select form="car" id="car_model" name="car model">
+                    <option disabled selected>Выберете модель</option>
+                    <option>Mercedes-AMG C 63 Cabriolet</option>
+                    <option>Mercedes-AMG C 63 S Cabriolet</option>
+                    <option>Mercedes-Benz C 200 d</option>
+                    <option>Mercedes-Benz C 220 d 4MATIC</option>
+                    <option>Mercedes-Benz CLA 180 Coupé</option>
+                    <option>Mercedes-AMG CLA 35 4MATIC Shooting Brake </option>
+                    <option>Mercedes-AMG E 63 S 4MATIC </option>
+                    <option>Mercedes-AMG G 63</option>
+                    <option>Mercedes-Benz S 350 d 4MATIC </option>
+                    <option>Mercedes-Benz S 580 e long</option>
+                </select>
+                <br>
+                <b>Страна:</b>
+                <br>
+                <div>
+                    <input type="checkbox" id="Германия" name="Страна1" value="Германия">
+                    <label for="Германия">Германия</label><br>
+                    <input type="checkbox" id="США" name="Страна2" value="США">
+                    <label for="США">США</label><br>
+                    <input type="checkbox" id="Украина" name="Страна3" value="Украина">
+                    <label for="Украина">Украина</label><br>
+                </div>
+                <div>
+                    <label for="Стоимость"> <b>Стоимость:</b></label>
+                    <input type="number" placeholder="от" name="Стоимость_от" id="Стоимость" step="500" min="100">
+                    <input type="number" placeholder="до" name="Стоимость_до" step="500">
+                    <select name="валюта">
+                        <option disabled selected>валюта</option>
+                        <option>UAH</option>
+                        <option>USA</option>
+                        <option>EUR</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="year"><b>Год выпуска:</b></label>
+                        <select form="car" id="year" name="year from">
+                        <option disabled selected>год выпуска от</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select>
+                    <select form="car" name="year before">
+                        <option disabled selected>год выпуска до</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+                <br>
+                <b>Состояние авто:</b>
+                <br>
+                <div>
+                    <input type="checkbox" id="choice1" name="choice1" value="Новое">
+                    <label for="choice1">Новое</label><br>
+                    <input type="checkbox" id="choice2" name="choice2" value="Есть_повреждения">
+                    <label for="choice2">Есть повреждения</label><br>
+                    <input type="checkbox" id="choice3" name="choice3" value="После_ремонта">
+                    <label for="choice3">Б/У</label>
+                </div>
+                <hr>
+                <b>Тип топлива:</b>
+                <br>
+                <div>
+                    <input type="checkbox" id="Дизель" name="Топлипо1" value="Дизель">
+                    <label for="Дизель">Дизель</label><br>
+                    <input type="checkbox" id="Бензин" name="Топлипо2" value="Бензин">
+                    <label for="Бензин">Бензин</label><br>
+                </div>
+                <br>
+                <b>Тип коробки передач:</b>
+                <br>
+                <div>
+                    <input type="checkbox" id="Механическая" name="Тип коробки_1" value="Механическая">
+                    <label for="Механическая">Механическая</label><br>
+                    <input type="checkbox" id="Автомат" name="Тип коробки_2" value="Автомат">
+                    <label for="Автомат">Автомат</label><br>
+                </div>
+                <div>
+                    <label for="favcolor">Выберете цвет кузова:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#000000">
+                </div>
+                <br>
+                <b>Комфорт:</b>
+                <br>
+                <div>
+                    <input type="checkbox" id="comfort_1" name="comfort_1" value="Климат контроль">
+                    <label for="comfort_1">Климат контроль</label><br>
+                    <input type="checkbox" id="comfort_2" name="comfort_2" value="Кожаный салон">
+                    <label for="comfort_2">Кожаный салон</label><br>
+                    <input type="checkbox" id="comfort_3" name="comfort_3" value="Кондиционер">
+                    <label for="comfort_3">Кондиционер</label><br>
+                    <input type="checkbox" id="comfort_4" name="comfort_4" value="Круиз контроль">
+                    <label for="comfort_4">Круиз контроль</label><br>
+                    <input type="checkbox" id="comfort_5" name="comfort_5" value="Люк">
+                    <label for="comfort_5">Люк</label><br>
+                </div>
+                <button>Поиск</button>
+                <button type="reset">Сброс</button>
+            </form>
+        </div>
+
+    </header>
+    <main>
+    </main>
+    <footer>
+        <hr>
+        <h4>О компании</h4>
+        <p> <b> Автоцентр "Днепропетровск-Авто"</b> </p>
+        <p>
+            В Днепре Mercedes-Вenz имеет честь представлять <br> компания "Днепропетровск-Авто", официальный дилер <br>
+            концерна Даймлер АГ.
+        </p>
+    </footer>
+</body>
+
+</html>
